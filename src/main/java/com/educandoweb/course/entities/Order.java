@@ -48,12 +48,7 @@ public Long getId() {
 public void setId(Long id) {
 	this.id = id;
 }
-public Instant getmoment() {
-	return moment;
-}
-public void setmoment(Instant moment) {
-	this.moment = moment;
-}
+
 @Override
 public int hashCode() {
 	return Objects.hash(id);
