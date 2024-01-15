@@ -7,6 +7,8 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,6 +25,7 @@ private static final long serialVersionUID = 1L;
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
 private Instant moment;
+@JsonIgnore
 @OneToOne
 @MapsId
 private Order order;

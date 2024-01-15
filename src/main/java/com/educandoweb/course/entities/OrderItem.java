@@ -53,6 +53,11 @@ private static final long serialVersionUID = 1L;
 	public void setProduct(Product product) {
 		 id.setProduct(product);
 	}
+	
+	public Double getSubTotal() {
+		return price * quantity;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
